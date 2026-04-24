@@ -9,20 +9,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     
-    <!--<Window.Resources>
-        <DataTemplate DataType="{x:Type vm:ProductListViewModel}">
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type vw:ProductListViewModel}">
             <views:ProductListView />
         </DataTemplate>
 
-        <DataTemplate DataType="{x:Type vm:ProductDetailViewModel}">
+        <DataTemplate DataType="{x:Type vw:ProductDetailViewModel}">
             <views:ProductDetailView />
         </DataTemplate>
 
-        <DataTemplate DataType="{x:Type vm:CartViewModel}">
+        <DataTemplate DataType="{x:Type vw:CartViewModel}">
             <views:CartView />
         </DataTemplate>
 
-    </Window.Resources>-->
+    </Window.Resources>
+  
     <DockPanel>
 
         <!-- Top-Leiste -->

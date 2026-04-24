@@ -7,7 +7,17 @@ namespace Mini_Shop_mit_Warenkorb_Simulation_WPF.ViewModels
 {
     public class MainViewModel : BaseViewModel
     {
-        public BaseViewModel CurrentView { get; set; }
+        private BaseViewModel _currentView;
+
+        public BaseViewModel CurrentView
+        {
+            get => _currentView;
+            set
+            {
+                _currentView = value;
+                OnPropertyChanged();
+            }
+        }
 
         public ProductListViewModel ProductListVM { get; set; }
         public CartViewModel CartVM { get; set; }
@@ -22,8 +32,15 @@ namespace Mini_Shop_mit_Warenkorb_Simulation_WPF.ViewModels
 
             CurrentView = ProductListVM;
 
-            ShowProductsCommand = new RelayCommand(_ => CurrentView = ProductListVM);
-            ShowCartCommand = new RelayCommand(_ => CurrentView = CartVM);
+            ShowProductsCommand = new RelayCommand(_ =>
+            {
+                CurrentView = ProductListVM;
+            });
+
+            ShowCartCommand = new RelayCommand(_ =>
+            {
+                CurrentView = CartVM;
+            });
         }
     }
 }

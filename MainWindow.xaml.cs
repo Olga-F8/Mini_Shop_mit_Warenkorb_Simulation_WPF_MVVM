@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿using Mini_Shop_mit_Warenkorb_Simulation_WPF.ViewModels;
+using System.IO;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -19,6 +21,12 @@ namespace Mini_Shop_mit_Warenkorb_Simulation_WPF
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new MainViewModel();
+            //if (!File.Exists("Data/products.csv"))
+            //{
+            //    MessageBox.Show("Die Datei 'Data/products.csv' wurde nicht gefunden.", "Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
+            //    Application.Current.Shutdown();
+            //}
         }
     }
 }

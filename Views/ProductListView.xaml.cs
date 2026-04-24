@@ -16,9 +16,9 @@ namespace Mini_Shop_mit_Warenkorb_Simulation_WPF.Views
     /// <summary>
     /// Interaktionslogik für ProductView.xaml
     /// </summary>
-    public partial class ProductView : UserControl
+    public partial class ProductListView : UserControl
     {
-        public ProductView()
+        public ProductListView()
         {
             InitializeComponent();
         }
