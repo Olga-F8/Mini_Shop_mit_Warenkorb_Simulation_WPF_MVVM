@@ -10,11 +10,159 @@
 
   <ItemGroup>
     <None Remove="Data\products.csv" />
+    <None Remove="Images\27_Zoll_Monitor.jpg" />
+    <None Remove="Images\Bluetooth_Kopfhoerer.jpg" />
+    <None Remove="Images\Bluetooth_Kopfhörer.jpg" />
+    <None Remove="Images\Buerostuhl_Ergonomisch.jpg" />
+    <None Remove="Images\Bürostuhl_Ergonomisch.jpg" />
+    <None Remove="Images\Couchtisch_Glas.jpg" />
+    <None Remove="Images\Externe_SSD_1TB.jpg" />
+    <None Remove="Images\Fahrradhelm.jpg" />
+    <None Remove="Images\Fitness_Matte.jpg" />
+    <None Remove="Images\Gaming_Maus_RGB.jpg" />
+    <None Remove="Images\Hantel_Set.jpg" />
+    <None Remove="Images\Jeans_Slim_Fit.jpg" />
+    <None Remove="Images\Kaffeemaschine.jpg" />
+    <None Remove="Images\Laptop_Pro_15.jpg" />
+    <None Remove="Images\Laufband.jpg" />
+    <None Remove="Images\Mechanische_Tastatur.jpg" />
+    <None Remove="Images\Mixer_Kuechen.jpg" />
+    <None Remove="Images\Mixer_Küchen.jpg" />
+    <None Remove="Images\Regal_Weiss.jpg" />
+    <None Remove="Images\Regal_Weiß.jpg" />
+    <None Remove="Images\Rucksack_Urban.jpg" />
+    <None Remove="Images\Schreibtisch_Holz.jpg" />
+    <None Remove="Images\Smartphone_X.jpg" />
+    <None Remove="Images\Sneaker_Weiss.jpg" />
+    <None Remove="Images\Sneaker_Weiß.jpg" />
+    <None Remove="Images\Springseil.jpg" />
+    <None Remove="Images\Staubsauger.jpg" />
+    <None Remove="Images\Stehlampe_Modern.jpg" />
+    <None Remove="Images\T-Shirt_Basic.jpg" />
+    <None Remove="Images\Tablet_10_Zoll.jpg" />
+    <None Remove="Images\Toaster_Edelstahl.jpg" />
+    <None Remove="Images\T_Shirt_Basic.jpg" />
+    <None Remove="Images\USB-C_Hub.jpg" />
+    <None Remove="Images\USB_C_Hub.jpg" />
+    <None Remove="Images\Wasserkocher.jpg" />
+    <None Remove="Images\Webcam_HD.jpg" />
+    <None Remove="Images\Winterjacke.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="Data\products.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\27_Zoll_Monitor.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bluetooth_Kopfhoerer.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bluetooth_Kopfhörer.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Buerostuhl_Ergonomisch.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bürostuhl_Ergonomisch.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Couchtisch_Glas.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Externe_SSD_1TB.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Fahrradhelm.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Fitness_Matte.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Gaming_Maus_RGB.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Hantel_Set.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Jeans_Slim_Fit.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Kaffeemaschine.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Laptop_Pro_15.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Laufband.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Mechanische_Tastatur.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Mixer_Kuechen.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Mixer_Küchen.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Regal_Weiss.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Regal_Weiß.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Rucksack_Urban.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Schreibtisch_Holz.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Smartphone_X.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Sneaker_Weiss.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Sneaker_Weiß.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Springseil.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Staubsauger.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Stehlampe_Modern.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\T-Shirt_Basic.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Tablet_10_Zoll.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Toaster_Edelstahl.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\T_Shirt_Basic.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\USB-C_Hub.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\USB_C_Hub.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Wasserkocher.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Webcam_HD.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Winterjacke.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
 

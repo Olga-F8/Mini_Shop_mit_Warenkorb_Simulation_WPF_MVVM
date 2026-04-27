@@ -23,7 +23,7 @@
                 <DataGridTemplateColumn Header="Bild">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <Image Source="{Binding Product.Image}" Width="50" Height="50"/>
+                            <Image Source="{Binding Product.ImageUrl}" Width="30" Height="30"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>

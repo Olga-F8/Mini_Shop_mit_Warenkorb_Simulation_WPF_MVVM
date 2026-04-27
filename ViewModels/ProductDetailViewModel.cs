@@ -50,9 +50,10 @@ namespace Mini_Shop_mit_Warenkorb_Simulation_WPF.ViewModels
 
                 Message = "Artikel wurde zum Warenkorb hinzugefügt!";
 
-                await Task.Delay(2000);
+                await Task.Delay(1500);
 
                 Message = "";
+                Quantity = 1;
             });
 
             BackCommand = new RelayCommand(_ =>

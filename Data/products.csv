@@ -1,35 +1,35 @@
 ﻿Id;Name;Price;Category;ImageUrl
-1;Laptop Pro 15;1299.99;Elektronik;https://images.unsplash.com/photo-1517336714731-489689fd1ca8
-2;Gaming Maus RGB;49.99;Elektronik;https://images.unsplash.com/photo-1527814050087-3793815479db
-3;Mechanische Tastatur;89.99;Elektronik;https://images.unsplash.com/photo-1511467687858-23d96c32e4ae
-4;27 Zoll Monitor;229.99;Elektronik;https://images.unsplash.com/photo-1587829741301-dc798b83add3
-5;USB-C Hub;29.99;Elektronik;https://images.unsplash.com/photo-1588872657578-7efd1f1555ed
-6;Bluetooth Kopfhörer;79.99;Elektronik;https://images.unsplash.com/photo-1505740420928-5e560c06d30e
-7;Smartphone X;699.99;Elektronik;https://images.unsplash.com/photo-1511707171634-5f897ff02aa9
-8;Tablet 10 Zoll;399.99;Elektronik;https://images.unsplash.com/photo-1585790050230-5dd28404ccb9
-9;Webcam HD;59.99;Elektronik;https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04
-10;Externe SSD 1TB;119.99;Elektronik;https://images.unsplash.com/photo-1597872200928-0fe0d4c0f3c2
+1;Laptop Pro 15;1299.99;Elektronik;Images/Laptop_Pro_15.jpg
+2;Gaming Maus RGB;49.99;Elektronik;Images/Gaming_Maus_RGB.jpg
+3;Mechanische Tastatur;89.99;Elektronik;Images/Mechanische_Tastatur.jpg
+4;27 Zoll Monitor;229.99;Elektronik;Images/27_Zoll_Monitor.jpg
+5;USB-C Hub;29.99;Elektronik;Images/USB_C_Hub.jpg
+6;Bluetooth Kopfhörer;79.99;Elektronik;Images/Bluetooth_Kopfhoerer.jpg
+7;Smartphone X;699.99;Elektronik;Images/Smartphone_X.jpg
+8;Tablet 10 Zoll;399.99;Elektronik;Images/Tablet_10_Zoll.jpg
+9;Webcam HD;59.99;Elektronik;Images/Webcam_HD.jpg
+10;Externe SSD 1TB;119.99;Elektronik;Images/Externe_SSD_1TB.jpg
 
-11;Bürostuhl Ergonomisch;149.99;Möbel;https://images.unsplash.com/photo-1582582429416-3f8c4b3c6d19
-12;Schreibtisch Holz;199.99;Möbel;https://images.unsplash.com/photo-1519710164239-da123dc03ef4
-13;Regal Weiß;89.99;Möbel;https://images.unsplash.com/photo-1583845112203-454c2d5e2a5c
-14;Stehlampe Modern;59.99;Möbel;https://images.unsplash.com/photo-1507473885765-e6ed057f782c
-15;Couchtisch Glas;129.99;Möbel;https://images.unsplash.com/photo-1505693416388-ac5ce068fe85
+11;Bürostuhl Ergonomisch;149.99;Möbel;Images/Buerostuhl_Ergonomisch.jpg
+12;Schreibtisch Holz;199.99;Möbel;Images/Schreibtisch_Holz.jpg
+13;Regal Weiß;89.99;Möbel;Images/Regal_Weiss.jpg
+14;Stehlampe Modern;59.99;Möbel;Images/Stehlampe_Modern.jpg
+15;Couchtisch Glas;129.99;Möbel;Images/Couchtisch_Glas.jpg
 
-16;Rucksack Urban;49.99;Accessoires;https://images.unsplash.com/photo-1553062407-98eeb64c6a62
-17;Sneaker Weiß;79.99;Mode;https://images.unsplash.com/photo-1528701800489-20be3c5d7f8c
-18;Winterjacke;129.99;Mode;https://images.unsplash.com/photo-1520975958225-3f61d7a5c1f1
-19;T-Shirt Basic;19.99;Mode;https://images.unsplash.com/photo-1521572163474-6864f9cf17ab
-20;Jeans Slim Fit;59.99;Mode;https://images.unsplash.com/photo-1541099649105-f69ad21f3246
+16;Rucksack Urban;49.99;Accessoires;Images/Rucksack_Urban.jpg
+17;Sneaker Weiß;79.99;Mode;Images/Sneaker_Weiss.jpg
+18;Winterjacke;129.99;Mode;Images/Winterjacke.jpg
+19;T-Shirt Basic;19.99;Mode;Images/T_Shirt_Basic.jpg
+20;Jeans Slim Fit;59.99;Mode;Images/Jeans_Slim_Fit.jpg
 
-21;Kaffeemaschine;89.99;Haushalt;https://images.unsplash.com/photo-1511920170033-f8396924c348
-22;Wasserkocher;29.99;Haushalt;https://images.unsplash.com/photo-1526401485004-2aa7c5c3a3c1
-23;Mixer Küchen;69.99;Haushalt;https://images.unsplash.com/photo-1586201375761-83865001e31c
-24;Toaster Edelstahl;39.99;Haushalt;https://images.unsplash.com/photo-1585238342028-4f1a0f3a6f6e
-25;Staubsauger;149.99;Haushalt;https://images.unsplash.com/photo-1581578731548-c64695cc6952
+21;Kaffeemaschine;89.99;Haushalt;Images/Kaffeemaschine.jpg
+22;Wasserkocher;29.99;Haushalt;Images/Wasserkocher.jpg
+23;Mixer Küchen;69.99;Haushalt;Images/Mixer_Kuechen.jpg
+24;Toaster Edelstahl;39.99;Haushalt;Images/Toaster_Edelstahl.jpg
+25;Staubsauger;149.99;Haushalt;Images/Staubsauger.jpg
 
-26;Fitness Matte;24.99;Sport;https://images.unsplash.com/photo-1599058917212-d750089bc07e
-27;Hantel Set;79.99;Sport;https://images.unsplash.com/photo-1583454110551-21f2fa2afe61
-28;Fahrradhelm;59.99;Sport;https://images.unsplash.com/photo-1520975922203-b5b8a0a0a0c4
-29;Laufband;499.99;Sport;https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b
-30;Springseil;14.99;Sport;https://images.unsplash.com/photo-1594737625785-cf7a8f1b3f7e
+26;Fitness Matte;24.99;Sport;Images/Fitness_Matte.jpg
+27;Hantel Set;79.99;Sport;Images/Hantel_Set.jpg
+28;Fahrradhelm;59.99;Sport;Images/Fahrradhelm.jpg
+29;Laufband;499.99;Sport;Images/Laufband.jpg
+30;Springseil;14.99;Sport;Images/Springseil.jpg

@@ -43,7 +43,7 @@ namespace Mini_Shop_mit_Warenkorb_Simulation_WPF.ViewModels
                 ((OrderItem)i).Quantity++;
                 Message = "Menge aktualisiert!";
                 OnPropertyChanged(nameof(TotalPrice));
-                await Task.Delay(2000);
+                await Task.Delay(1500);
                 Message = "";
             });
 
@@ -55,7 +55,7 @@ namespace Mini_Shop_mit_Warenkorb_Simulation_WPF.ViewModels
                 
                 OnPropertyChanged(nameof(TotalPrice));
                 Message = "Menge aktualisiert!";
-                await Task.Delay(2000);
+                await Task.Delay(1500);
 
                 Message = "";
             });
@@ -65,19 +65,34 @@ namespace Mini_Shop_mit_Warenkorb_Simulation_WPF.ViewModels
                 Items.Remove((OrderItem)i);
                 Message = "Artikel entfernt!";
                 OnPropertyChanged(nameof(TotalPrice));
-                await Task.Delay(2000);
+                await Task.Delay(1500);
                 Message = "";
             });
         }
 
         public void AddToCart(Product product, int quantity)
         {
-            Items.Add(new OrderItem
+            var existingItem = Items.FirstOrDefault(i => i.Product.Id == product.Id);
+
+            if (existingItem != null)
             {
-                Product = product,
-                Quantity = quantity,
-                UnitPrice = product.Price
-            });
+                // Artikel existiert → Menge erhöhen
+                existingItem.Quantity += quantity;
+
+                // UI aktualisieren
+                OnPropertyChanged(nameof(Items));
+            }
+            else
+            {
+                // Neuer Artikel
+                Items.Add(new OrderItem
+                {
+                    Product = product,
+                    Quantity = quantity,
+                    UnitPrice = product.Price
+                });
+            }
+
             OnPropertyChanged(nameof(TotalPrice));
         }
     }

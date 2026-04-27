@@ -8,8 +8,6 @@ using System.Linq;
 
 namespace Mini_Shop_mit_Warenkorb_Simulation_WPF.Services
 {
-   
-
     public class CsvService
     {
         private readonly string filePath = "Data/products.csv";
@@ -18,18 +16,27 @@ namespace Mini_Shop_mit_Warenkorb_Simulation_WPF.Services
         {
             var products = new List<Product>();
 
-            // Streamen statt alles in den Speicher laden
-            var lines = File.ReadLines(filePath).Skip(1); // Header überspringen
+            var lines = File.ReadLines(filePath).Skip(1);
 
-            foreach (var (line, idx) in lines.Select((l, i) => (l, i + 2))) // +2 = echte Dateizeilennummer (optional)
+            foreach (var (line, idx) in lines.Select((l, i) => (l, i + 2)))
             {
                 if (string.IsNullOrWhiteSpace(line)) continue;
 
                 var parts = line.Split(';');
-                if (parts.Length < 5) continue; // oder Logging/Fehlerbericht
+                if (parts.Length < 5) continue;
 
-                if (!int.TryParse(parts[0].Trim(), out var id)) continue; // oder Logging
-                if (!decimal.TryParse(parts[2].Trim(), NumberStyles.Number, CultureInfo.InvariantCulture, out var price)) continue;
+                if (!int.TryParse(parts[0].Trim(), out var id)) continue;
+
+                if (!decimal.TryParse(parts[2].Trim(),
+                    NumberStyles.Number,
+                    CultureInfo.InvariantCulture,
+                    out var price)) continue;
+
+                // ImagePath absolut setzen
+                var imagePath = Path.Combine(
+                    AppDomain.CurrentDomain.BaseDirectory,
+                    parts[4].Trim()
+                );
 
                 products.Add(new Product
                 {
@@ -37,7 +44,7 @@ namespace Mini_Shop_mit_Warenkorb_Simulation_WPF.Services
                     Name = parts[1].Trim(),
                     Price = price,
                     Category = parts[3].Trim(),
-                    ImageUrl = parts[4].Trim()
+                    ImageUrl = imagePath
                 });
             }
 
@@ -47,13 +54,18 @@ namespace Mini_Shop_mit_Warenkorb_Simulation_WPF.Services
         public void SaveProducts(List<Product> products)
         {
             var lines = new List<string>
-        {
-            "Id;Name;Price;Category;ImageUrl"
-        };
+            {
+                "Id;Name;Price;Category;ImageUrl"
+            };
 
             foreach (var p in products)
             {
-                lines.Add($"{p.Id};{p.Name};{p.Price};{p.Category};{p.ImageUrl}");
+                // Speichere wieder RELATIVEN Pfad in CSV
+                var relativePath = p.ImageUrl
+                    .Replace(AppDomain.CurrentDomain.BaseDirectory, "")
+                    .TrimStart('\\');
+
+                lines.Add($"{p.Id};{p.Name};{p.Price};{p.Category};{relativePath}");
             }
 
             File.WriteAllLines(filePath, lines);
