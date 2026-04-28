@@ -24,6 +24,16 @@ namespace Mini_Shop_mit_Warenkorb_Simulation_WPF.ViewModels
         public RelayCommand CreateInvoiceCommand { get; set; }
 
         public ObservableCollection<Customer> Customers { get; set; }
+        private string _message;
+        public string Message
+        {
+            get => _message;
+            set
+            {
+                _message = value;
+                OnPropertyChanged(nameof(Message));
+            }
+        }
         public CheckoutViewModel(MainViewModel mainVM)
         {
             _mainVM = mainVM;
@@ -46,8 +56,23 @@ namespace Mini_Shop_mit_Warenkorb_Simulation_WPF.ViewModels
         }
         
 
-        private void CreateInvoice()
+        private async void CreateInvoice()
         {
+            if(string.IsNullOrWhiteSpace(FirstName) || string.IsNullOrWhiteSpace(LastName) || string.IsNullOrWhiteSpace(Email))
+            {
+
+                Message = "Bitte alle Felder ausfüllen!";
+                await Task.Delay(1500);
+                Message = "";
+                return;
+            }
+            else if (!Email.Contains("@") || !Email.Contains("."))
+            {
+                Message = "Bitte eine gültige E-Mail-Adresse eingeben!";
+                await Task.Delay(1500);
+                Message = "";
+                return;
+            } else {
             var service = new CsvService();
 
             var newCustomer = new Customer
@@ -67,32 +92,34 @@ namespace Mini_Shop_mit_Warenkorb_Simulation_WPF.ViewModels
                 DefaultExt = ".txt"
             };
 
-            if (dialog.ShowDialog() == true)
-            {
-                var sb = new StringBuilder();
-
-                sb.AppendLine("=== RECHNUNG ===");
-                sb.AppendLine($"Name: {FirstName} {LastName}");
-                sb.AppendLine($"Email: {Email}");
-                sb.AppendLine("");
-
-                foreach (var item in _mainVM.CartVM.Items)
+                if (dialog.ShowDialog() == true)
                 {
-                    sb.AppendLine($"{item.Product.Name} x{item.Quantity} - {item.UnitPrice * item.Quantity} €");
+                    var sb = new StringBuilder();
+
+                    sb.AppendLine("=== RECHNUNG ===");
+                    sb.AppendLine($"Name: {FirstName} {LastName}");
+                    sb.AppendLine($"Email: {Email}");
+                    sb.AppendLine("");
+
+                    foreach (var item in _mainVM.CartVM.Items)
+                    {
+                        sb.AppendLine($"{item.Product.Name} x{item.Quantity} - {item.UnitPrice * item.Quantity} €");
+                    }
+
+                    sb.AppendLine("");
+                    sb.AppendLine($"Gesamt: {TotalPrice} €");
+
+                    // Datei speichern
+                    File.WriteAllText(dialog.FileName, sb.ToString());
+
+                    // Datei automatisch öffnen
+                    Process.Start(new ProcessStartInfo
+                    {
+                        FileName = dialog.FileName,
+                        UseShellExecute = true
+                    });
+
                 }
-
-                sb.AppendLine("");
-                sb.AppendLine($"Gesamt: {TotalPrice} €");
-
-                // Datei speichern
-                File.WriteAllText(dialog.FileName, sb.ToString());
-
-                // Datei automatisch öffnen
-                Process.Start(new ProcessStartInfo
-                {
-                    FileName = dialog.FileName,
-                    UseShellExecute = true
-                });
             }
         }
     }

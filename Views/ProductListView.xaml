@@ -30,15 +30,15 @@
                         <StackPanel>
                             <!-- BILD -->
                             <Button Command="{Binding DataContext.OpenDetailCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
-        CommandParameter="{Binding}"
-        Background="Transparent"
-        BorderThickness="0"
-        Padding="0">
+                            CommandParameter="{Binding}"
+                            Background="Transparent"
+                            BorderThickness="0"
+                            Padding="0">    
 
                                 <Image Width="100" Height="100">
                                     <Image.Source>
                                         <BitmapImage UriSource="{Binding ImageUrl}"
-                         DecodePixelWidth="200"/>
+                            DecodePixelWidth="200"/>
                                     </Image.Source>
                                 </Image>
 
