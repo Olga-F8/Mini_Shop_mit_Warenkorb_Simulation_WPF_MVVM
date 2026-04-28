@@ -43,7 +43,9 @@ namespace Mini_Shop_mit_Warenkorb_Simulation_WPF.ViewModels
         {
             _mainVM = mainVM;
             Product = product;
-
+            var window = System.Windows.Application.Current.MainWindow;
+            window.Width = 900;
+            window.Height = 600;
             AddToCartCommand = new RelayCommand(async _ =>
             {
                 _mainVM.CartVM.AddToCart(Product, Quantity);
@@ -59,6 +61,9 @@ namespace Mini_Shop_mit_Warenkorb_Simulation_WPF.ViewModels
             BackCommand = new RelayCommand(_ =>
             {
                 _mainVM.CurrentView = _mainVM.ProductListVM;
+                var window = System.Windows.Application.Current.MainWindow;
+                window.Width = 900;
+                window.Height = 800;
             });
 
             IncreaseQuantityCommand = new RelayCommand(_ =>

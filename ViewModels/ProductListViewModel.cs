@@ -30,6 +30,7 @@ namespace Mini_Shop_mit_Warenkorb_Simulation_WPF.ViewModels
                 var product = p as Product;
                 if (product == null) return;
 
+
                 _mainVM.CurrentView = new ProductDetailViewModel(_mainVM, product);
             });
         }

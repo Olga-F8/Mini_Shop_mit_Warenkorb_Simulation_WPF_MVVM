@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Data\customers.csv" />
     <None Remove="Data\products.csv" />
     <None Remove="Images\27_Zoll_Monitor.jpg" />
     <None Remove="Images\Bluetooth_Kopfhoerer.jpg" />
@@ -50,8 +51,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Data\customers.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Data\products.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\27_Zoll_Monitor.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

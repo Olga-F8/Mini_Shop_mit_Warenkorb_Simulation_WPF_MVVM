@@ -68,6 +68,17 @@ namespace Mini_Shop_mit_Warenkorb_Simulation_WPF.ViewModels
                 await Task.Delay(1500);
                 Message = "";
             });
+
+            CheckoutCommand = new RelayCommand(_ =>
+            {
+                if (!Items.Any())
+                {
+                    Message = "Warenkorb ist leer!";
+                    return;
+                }
+
+                _mainVM.CurrentView = _mainVM.CheckoutVM;
+            });
         }
 
         public void AddToCart(Product product, int quantity)

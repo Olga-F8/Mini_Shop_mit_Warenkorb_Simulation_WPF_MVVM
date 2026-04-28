@@ -33,21 +33,31 @@ namespace Mini_Shop_mit_Warenkorb_Simulation_WPF.ViewModels
             CartVM = new CartViewModel(this);
             CheckoutVM = new CheckoutViewModel(this);
 
+            CurrentView = ProductListVM;
+
             ShowCheckoutCommand = new RelayCommand(_ =>
             {
                 CurrentView = CheckoutVM;
+
+                var window = System.Windows.Application.Current.MainWindow;
+                window.Width = 350;
+                window.Height = 450;
             });
 
-            CurrentView = ProductListVM;
 
             ShowProductsCommand = new RelayCommand(_ =>
             {
                 CurrentView = ProductListVM;
+
+                var window = System.Windows.Application.Current.MainWindow;
+                window.Width = 900;
+                window.Height = 800;
             });
 
             ShowCartCommand = new RelayCommand(_ =>
             {
                 CurrentView = CartVM;
+                
             });
         }
     }

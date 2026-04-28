@@ -4,6 +4,45 @@
              xmlns:local="clr-namespace:Mini_Shop_mit_Warenkorb_Simulation_WPF"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+         <!--styles für buttons-->
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#FF131F2B"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Margin" Value="10"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                        CornerRadius="5"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}">
+
+                            <ContentPresenter HorizontalAlignment="Center"
+                                      VerticalAlignment="Center"
+                                      Margin="10,5"/>
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#162D6E"/>
+                            </Trigger>
+
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#0F1F4A"/>
+                            </Trigger>
+
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Background" Value="#BDC3C7"/>
+                                <Setter Property="Foreground" Value="#7F8C8D"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Application.Resources>
 </Application>

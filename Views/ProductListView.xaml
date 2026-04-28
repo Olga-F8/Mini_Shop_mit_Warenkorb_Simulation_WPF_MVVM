@@ -23,19 +23,27 @@
                     <Border BorderBrush="Gray"
                             BorderThickness="1"
                             Margin="10"
-                            Width="200"
+                            Width="180"
                             Height="240"
                             Padding="10">
 
                         <StackPanel>
                             <!-- BILD -->
+                            <Button Command="{Binding DataContext.OpenDetailCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+        CommandParameter="{Binding}"
+        Background="Transparent"
+        BorderThickness="0"
+        Padding="0">
 
-                            <Image Width="120" Height="120">
-                                <Image.Source>
-                                     <BitmapImage UriSource="{Binding ImageUrl}"
-                     DecodePixelWidth="200"/>
-                                </Image.Source>
-                            </Image>
+                                <Image Width="100" Height="100">
+                                    <Image.Source>
+                                        <BitmapImage UriSource="{Binding ImageUrl}"
+                         DecodePixelWidth="200"/>
+                                    </Image.Source>
+                                </Image>
+
+                            </Button>
+
                             <!--<Image Source="{Binding ImageUrl}"
                                    Width="120"
                                    Height="120"

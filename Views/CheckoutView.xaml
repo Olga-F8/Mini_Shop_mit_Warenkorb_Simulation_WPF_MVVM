@@ -43,7 +43,7 @@
 
                 <Button Content="Zurück"
                     Margin="0,0,10,0"
-                    Command="{Binding BackCommand}"/>
+                    Command="{Binding BackCommand}" Height="25"/>
 
                 <Button Content="Rechnung erstellen"
                     Command="{Binding CreateInvoiceCommand}"/>

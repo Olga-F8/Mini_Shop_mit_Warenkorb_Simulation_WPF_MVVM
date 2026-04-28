@@ -11,6 +11,7 @@ namespace Mini_Shop_mit_Warenkorb_Simulation_WPF.Services
     public class CsvService
     {
         private readonly string filePath = "Data/products.csv";
+        
         private readonly string customerFilePath = "Data/customers.csv";
         public List<Product> LoadProducts()
         {
@@ -44,7 +45,7 @@ namespace Mini_Shop_mit_Warenkorb_Simulation_WPF.Services
                     Price = price,
                     Category = parts[3].Trim(),
                     ImageUrl = imagePath,
-                    Description = parts[5].Trim() // ✅ NEU
+                    Description = parts[5].Trim()
                 });
             }
 
@@ -76,6 +77,29 @@ namespace Mini_Shop_mit_Warenkorb_Simulation_WPF.Services
             }
 
             return customers;
+        }
+
+        public void AddCustomer(Customer customer)
+        {
+            // existierende Kunden laden
+            var customers = LoadCustomers();
+
+            // prüfen ob Kunde schon existiert (z. B. über Email)
+            if (customers.Any(c => c.Email == customer.Email))
+                return;
+
+            // neue ID vergeben
+            int newId = customers.Any() ? customers.Max(c => c.Id) + 1 : 1;
+            customer.Id = newId;
+
+            // Zeile anhängen
+            var line = $"{customer.Id};{customer.FirstName};{customer.LastName};{customer.Email}";
+            var fullPath = Path.Combine(
+    AppDomain.CurrentDomain.BaseDirectory,
+    "Data",
+    "customers.csv"
+);
+            File.AppendAllText(fullPath, Environment.NewLine + line);
         }
 
         public void SaveProducts(List<Product> products)

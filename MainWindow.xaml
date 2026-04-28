@@ -7,7 +7,7 @@
         xmlns:views="clr-namespace:Mini_Shop_mit_Warenkorb_Simulation_WPF.Views"
         xmlns:vw="clr-namespace:Mini_Shop_mit_Warenkorb_Simulation_WPF.ViewModels"
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="950"
+        Title="MainWindow" Height="800" Width="900"
         WindowStartupLocation="CenterScreen">
     
     <Window.Resources>
@@ -34,7 +34,7 @@
         <!-- Top-Leiste -->
         <StackPanel Orientation="Horizontal"
                   DockPanel.Dock="Top"
-                  Background="#2C3E50"
+                  Background="#FF5B6670"
                   Height="50">
 
             <Button Content="Produkte"

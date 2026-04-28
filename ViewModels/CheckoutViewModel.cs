@@ -1,9 +1,12 @@
-﻿using Mini_Shop_mit_Warenkorb_Simulation_WPF.Helpers;
+﻿using Microsoft.Win32;
+using Mini_Shop_mit_Warenkorb_Simulation_WPF.Helpers;
+using Mini_Shop_mit_Warenkorb_Simulation_WPF.Models;
+using Mini_Shop_mit_Warenkorb_Simulation_WPF.Services;
 using Mini_Shop_mit_Warenkorb_Simulation_WPF.ViewModels;
+using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.IO;
 using System.Text;
-using Microsoft.Win32;
-using System.Diagnostics;
 
 namespace Mini_Shop_mit_Warenkorb_Simulation_WPF.ViewModels
 {
@@ -20,13 +23,20 @@ namespace Mini_Shop_mit_Warenkorb_Simulation_WPF.ViewModels
         public RelayCommand BackCommand { get; set; }
         public RelayCommand CreateInvoiceCommand { get; set; }
 
+        public ObservableCollection<Customer> Customers { get; set; }
         public CheckoutViewModel(MainViewModel mainVM)
         {
             _mainVM = mainVM;
 
+            var service = new CsvService();
+            Customers = new ObservableCollection<Customer>(service.LoadCustomers());
+
             BackCommand = new RelayCommand(_ =>
             {
                 _mainVM.CurrentView = _mainVM.CartVM;
+                var window = System.Windows.Application.Current.MainWindow;
+                window.Width = 900;
+                window.Height = 600;
             });
 
             CreateInvoiceCommand = new RelayCommand(_ =>
@@ -34,12 +44,25 @@ namespace Mini_Shop_mit_Warenkorb_Simulation_WPF.ViewModels
                 CreateInvoice();
             });
         }
+        
 
         private void CreateInvoice()
         {
+            var service = new CsvService();
+
+            var newCustomer = new Customer
+            {
+                FirstName = FirstName,
+                LastName = LastName,
+                Email = Email
+            };
+
+            // Kunde speichern
+            service.AddCustomer(newCustomer);
+
             var dialog = new SaveFileDialog
             {
-                FileName = "Rechnung.txt",
+                FileName = $"Rechnung_{FirstName}_{LastName}_{DateTime.Now:yyyyMMdd_HHmmss}.txt",
                 Filter = "Textdatei (*.txt)|*.txt",
                 DefaultExt = ".txt"
             };
