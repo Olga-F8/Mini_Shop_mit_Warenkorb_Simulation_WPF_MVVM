@@ -32,7 +32,7 @@
 
                             <Image Width="120" Height="120">
                                 <Image.Source>
-                                    <BitmapImage UriSource="{Binding ImageUrl}"
+                                     <BitmapImage UriSource="{Binding ImageUrl}"
                      DecodePixelWidth="200"/>
                                 </Image.Source>
                             </Image>

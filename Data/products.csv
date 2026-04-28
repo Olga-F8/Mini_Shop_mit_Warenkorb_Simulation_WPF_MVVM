@@ -1,35 +1,35 @@
-﻿Id;Name;Price;Category;ImageUrl
-1;Laptop Pro 15;1299.99;Elektronik;Images/Laptop_Pro_15.jpg
-2;Gaming Maus RGB;49.99;Elektronik;Images/Gaming_Maus_RGB.jpg
-3;Mechanische Tastatur;89.99;Elektronik;Images/Mechanische_Tastatur.jpg
-4;27 Zoll Monitor;229.99;Elektronik;Images/27_Zoll_Monitor.jpg
-5;USB-C Hub;29.99;Elektronik;Images/USB_C_Hub.jpg
-6;Bluetooth Kopfhörer;79.99;Elektronik;Images/Bluetooth_Kopfhoerer.jpg
-7;Smartphone X;699.99;Elektronik;Images/Smartphone_X.jpg
-8;Tablet 10 Zoll;399.99;Elektronik;Images/Tablet_10_Zoll.jpg
-9;Webcam HD;59.99;Elektronik;Images/Webcam_HD.jpg
-10;Externe SSD 1TB;119.99;Elektronik;Images/Externe_SSD_1TB.jpg
+﻿Id;Name;Price;Category;ImageUrl;Description
+1;Laptop Pro 15;1299.99;Elektronik;Images/Laptop_Pro_15.jpg;Leistungsstarker Laptop mit 15 Zoll Display, schneller SSD und moderner CPU. Ideal für Arbeit, Studium und anspruchsvolle Anwendungen wie Programmierung oder Gaming.
+2;Gaming Maus RGB;49.99;Elektronik;Images/Gaming_Maus_RGB.jpg;Ergonomische Gaming-Maus mit präzisem Sensor und anpassbarer RGB-Beleuchtung. Perfekt für lange Gaming-Sessions und schnelle Reaktionen.
+3;Mechanische Tastatur;89.99;Elektronik;Images/Mechanische_Tastatur.jpg;Robuste mechanische Tastatur mit langlebigen Switches und angenehmem Tippgefühl. Ideal für Vielschreiber und Gamer.
+4;27 Zoll Monitor;229.99;Elektronik;Images/27_Zoll_Monitor.jpg;Großer Full-HD/2K Monitor mit klarer Darstellung und breiten Blickwinkeln. Optimal für Büroarbeit, Multimedia und Gaming.
+5;USB-C Hub;29.99;Elektronik;Images/USB_C_Hub.jpg;Kompakter USB-C Hub mit mehreren Anschlüssen wie HDMI, USB und Kartenleser. Perfekt zur Erweiterung moderner Laptops.
+6;Bluetooth Kopfhörer;79.99;Elektronik;Images/Bluetooth_Kopfhoerer.jpg;Kabellose Kopfhörer mit klarem Sound und stabiler Bluetooth-Verbindung. Lange Akkulaufzeit für Musik und Telefonate unterwegs.
+7;Smartphone X;699.99;Elektronik;Images/Smartphone_X.jpg;Modernes Smartphone mit leistungsstarkem Prozessor, hochauflösender Kamera und großem Display für Alltag und Multimedia.
+8;Tablet 10 Zoll;399.99;Elektronik;Images/Tablet_10_Zoll.jpg;Leichtes Tablet mit 10 Zoll Display. Ideal zum Surfen, Lesen, Streaming und Arbeiten unterwegs.
+9;Webcam HD;59.99;Elektronik;Images/Webcam_HD.jpg;HD-Webcam mit guter Bildqualität für Videokonferenzen, Online-Unterricht und Streaming.
+10;Externe SSD 1TB;119.99;Elektronik;Images/Externe_SSD_1TB.jpg;Schnelle externe SSD mit 1TB Speicherplatz. Perfekt für Backups, große Dateien und mobilen Einsatz.
 
-11;Bürostuhl Ergonomisch;149.99;Möbel;Images/Buerostuhl_Ergonomisch.jpg
-12;Schreibtisch Holz;199.99;Möbel;Images/Schreibtisch_Holz.jpg
-13;Regal Weiß;89.99;Möbel;Images/Regal_Weiss.jpg
-14;Stehlampe Modern;59.99;Möbel;Images/Stehlampe_Modern.jpg
-15;Couchtisch Glas;129.99;Möbel;Images/Couchtisch_Glas.jpg
+11;Bürostuhl Ergonomisch;149.99;Möbel;Images/Buerostuhl_Ergonomisch.jpg;Ergonomischer Bürostuhl mit verstellbarer Rückenlehne und Sitzhöhe. Sorgt für bequemes Arbeiten auch bei langen Sitzzeiten.
+12;Schreibtisch Holz;199.99;Möbel;Images/Schreibtisch_Holz.jpg;Stabiler Holzschreibtisch mit großzügiger Arbeitsfläche. Ideal für Büro, Homeoffice oder Studium.
+13;Regal Weiß;89.99;Möbel;Images/Regal_Weiss.jpg;Modernes Regal mit mehreren Fächern für Bücher, Deko oder Ordner. Passt in jedes Wohn- oder Arbeitszimmer.
+14;Stehlampe Modern;59.99;Möbel;Images/Stehlampe_Modern.jpg;Stilvolle Stehlampe mit warmem Licht für angenehme Atmosphäre im Wohnbereich.
+15;Couchtisch Glas;129.99;Möbel;Images/Couchtisch_Glas.jpg;Eleganter Couchtisch mit Glasplatte und stabilem Gestell. Ideal für Wohnzimmer und Gäste.
 
-16;Rucksack Urban;49.99;Accessoires;Images/Rucksack_Urban.jpg
-17;Sneaker Weiß;79.99;Mode;Images/Sneaker_Weiss.jpg
-18;Winterjacke;129.99;Mode;Images/Winterjacke.jpg
-19;T-Shirt Basic;19.99;Mode;Images/T_Shirt_Basic.jpg
-20;Jeans Slim Fit;59.99;Mode;Images/Jeans_Slim_Fit.jpg
+16;Rucksack Urban;49.99;Accessoires;Images/Rucksack_Urban.jpg;Moderner Rucksack mit viel Stauraum und bequemen Trägern. Perfekt für Alltag, Schule oder Reisen.
+17;Sneaker Weiß;79.99;Mode;Images/Sneaker_Weiss.jpg;Bequeme Sneaker im schlichten Design. Vielseitig kombinierbar für Freizeit und Alltag.
+18;Winterjacke;129.99;Mode;Images/Winterjacke.jpg;Warme und wetterfeste Jacke für kalte Tage. Bietet Schutz vor Wind und Kälte.
+19;T-Shirt Basic;19.99;Mode;Images/T_Shirt_Basic.jpg;Einfaches Baumwoll-T-Shirt mit angenehmem Tragekomfort. Ideal für jeden Tag.
+20;Jeans Slim Fit;59.99;Mode;Images/Jeans_Slim_Fit.jpg;Moderne Slim-Fit Jeans mit bequemer Passform. Passt zu vielen Outfits.
 
-21;Kaffeemaschine;89.99;Haushalt;Images/Kaffeemaschine.jpg
-22;Wasserkocher;29.99;Haushalt;Images/Wasserkocher.jpg
-23;Mixer Küchen;69.99;Haushalt;Images/Mixer_Kuechen.jpg
-24;Toaster Edelstahl;39.99;Haushalt;Images/Toaster_Edelstahl.jpg
-25;Staubsauger;149.99;Haushalt;Images/Staubsauger.jpg
+21;Kaffeemaschine;89.99;Haushalt;Images/Kaffeemaschine.jpg;Zuverlässige Kaffeemaschine für frisch gebrühten Kaffee. Einfach zu bedienen und schnell einsatzbereit.
+22;Wasserkocher;29.99;Haushalt;Images/Wasserkocher.jpg;Elektrischer Wasserkocher mit schneller Aufheizzeit. Ideal für Tee, Kaffee oder Instant-Gerichte.
+23;Mixer Küchen;69.99;Haushalt;Images/Mixer_Kuechen.jpg;Leistungsstarker Mixer für Smoothies, Suppen und Shakes. Einfach zu reinigen.
+24;Toaster Edelstahl;39.99;Haushalt;Images/Toaster_Edelstahl.jpg;Toaster mit mehreren Bräunungsstufen und modernem Edelstahl-Design.
+25;Staubsauger;149.99;Haushalt;Images/Staubsauger.jpg;Effizienter Staubsauger mit starker Saugleistung für gründliche Reinigung im Haushalt.
 
-26;Fitness Matte;24.99;Sport;Images/Fitness_Matte.jpg
-27;Hantel Set;79.99;Sport;Images/Hantel_Set.jpg
-28;Fahrradhelm;59.99;Sport;Images/Fahrradhelm.jpg
-29;Laufband;499.99;Sport;Images/Laufband.jpg
-30;Springseil;14.99;Sport;Images/Springseil.jpg
+26;Fitness Matte;24.99;Sport;Images/Fitness_Matte.jpg;Rutschfeste Matte für Yoga, Fitness und Dehnübungen. Angenehm und pflegeleicht.
+27;Hantel Set;79.99;Sport;Images/Hantel_Set.jpg;Vielseitiges Hantelset für effektives Krafttraining zuhause oder im Studio.
+28;Fahrradhelm;59.99;Sport;Images/Fahrradhelm.jpg;Leichter und sicherer Fahrradhelm mit guter Belüftung für optimalen Schutz.
+29;Laufband;499.99;Sport;Images/Laufband.jpg;Laufband für das Training zuhause. Einstellbare Geschwindigkeit und Programme für individuelles Training.
+30;Springseil;14.99;Sport;Images/Springseil.jpg;Leichtes Springseil für Ausdauertraining und Fitness. Einfach mitzunehmen und effektiv.

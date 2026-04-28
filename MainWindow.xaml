@@ -7,7 +7,7 @@
         xmlns:views="clr-namespace:Mini_Shop_mit_Warenkorb_Simulation_WPF.Views"
         xmlns:vw="clr-namespace:Mini_Shop_mit_Warenkorb_Simulation_WPF.ViewModels"
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="1200"
+        Title="MainWindow" Height="800" Width="950"
         WindowStartupLocation="CenterScreen">
     
     <Window.Resources>
@@ -22,7 +22,11 @@
         <DataTemplate DataType="{x:Type vw:CartViewModel}">
             <views:CartView />
         </DataTemplate>
-
+        
+        <DataTemplate DataType="{x:Type vw:CheckoutViewModel}">
+            <views:CheckoutView />
+        </DataTemplate>
+        
     </Window.Resources>
   
     <DockPanel>

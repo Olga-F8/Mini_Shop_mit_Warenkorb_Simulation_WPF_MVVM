@@ -21,6 +21,8 @@ namespace Mini_Shop_mit_Warenkorb_Simulation_WPF.ViewModels
 
         public ProductListViewModel ProductListVM { get; set; }
         public CartViewModel CartVM { get; set; }
+        public CheckoutViewModel CheckoutVM { get; set; }
+        public RelayCommand ShowCheckoutCommand { get; set; }
 
         public RelayCommand ShowProductsCommand { get; set; }
         public RelayCommand ShowCartCommand { get; set; }
@@ -29,6 +31,12 @@ namespace Mini_Shop_mit_Warenkorb_Simulation_WPF.ViewModels
         {
             ProductListVM = new ProductListViewModel(this);
             CartVM = new CartViewModel(this);
+            CheckoutVM = new CheckoutViewModel(this);
+
+            ShowCheckoutCommand = new RelayCommand(_ =>
+            {
+                CurrentView = CheckoutVM;
+            });
 
             CurrentView = ProductListVM;
 

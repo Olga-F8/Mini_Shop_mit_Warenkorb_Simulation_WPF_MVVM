@@ -11,5 +11,6 @@ namespace Mini_Shop_mit_Warenkorb_Simulation_WPF.Models
         public decimal Price { get; set; }
         public string Category { get; set; }
         public string ImageUrl { get; set; }
+        public string Description { get; set; } = string.Empty;
     }
 }

@@ -10,6 +10,7 @@ namespace Mini_Shop_mit_Warenkorb_Simulation_WPF.Models
         public DateTime Date { get; set; }
 
         public int CustomerId { get; set; }
+        public Customer Customer { get; set; }
         public List<OrderItem> Items { get; set; } = new();
     }
 }
